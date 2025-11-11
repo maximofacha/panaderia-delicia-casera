@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delicia Casera - Pedidos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Delicia Casera">
+      <div>
+        <strong>Delicia Casera</strong><div style="font-size:12px;color:#6b6b6b">Panadería</div>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="pedidos.html">Pedidos</a></li>
+      <li><a href="sucursales.html">Sucursales</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h2 class="section-title">Hacé tu Pedido</h2>
+    
+    <div style="display:flex;gap:40px;align-items:start;flex-wrap:wrap;justify-content:center;margin-bottom:40px">
+      <img src="img/pan1.jpg" alt="Productos" style="width:300px;border-radius:12px;box-shadow:0 8px 20px rgba(17,24,39,0.06)">
+      <div style="max-width:400px">
+        <h3 style="margin-bottom:16px;color:#111827">Formas de Pedido</h3>
+        <div style="margin-bottom:12px">
+          <strong>📞 Teléfono:</strong>
+          <p>(011) 4567-8901 - Casa Central</p>
+          <p>(011) 4567-8902 - Sucursal Libertad</p>
+        </div>
+        <div style="margin-bottom:12px">
+          <strong>📱 WhatsApp:</strong>
+          <p>(011) 15-1234-5678</p>
+        </div>
+        <div>
+          <strong>🕰 Horarios de Pedido:</strong>
+          <p>Lunes a Sábado: 8:00 - 18:00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-bottom:40px">
+      <div class="card">
+        <img src="img/tortas.jpg" alt="Tortas personalizadas">
+        <h3>Tortas Personalizadas</h3>
+        <p>Pedidos con 48hs de anticipación. Consulta por diseños especiales.</p>
+      </div>
+      <div class="card">
+        <img src="img/pan2.jpg" alt="Pedidos grandes">
+        <h3>Pedidos Grandes</h3>
+        <p>Para eventos y empresas. Descuentos especiales en compras mayoristas.</p>
+      </div>
+      <div class="card">
+        <img src="img/Club-Martino-Sucursal-Ituzaingo-1.jpg" alt="Productos especiales">
+        <h3>Productos Especiales</h3>
+        <p>Panes artesanales y productos de temporada bajo pedido.</p>
+      </div>
+    </div>
+
+    <h3 style="text-align:center;margin-bottom:20px;color:#111827">Formulario de Consulta</h3>
+    <p style="text-align:center;color:#6b6b6b;margin-bottom:20px">Dejá tus datos y te contactamos para coordinar tu pedido</p>
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Gracias por tu consulta.\nNos comunicaremos contigo a la brevedad.');">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="tel" placeholder="Teléfono" required>
+      <input type="email" placeholder="Email">
+      <select required>
+        <option value="">Tipo de pedido</option>
+        <option value="torta">Torta personalizada</option>
+        <option value="evento">Evento/Catering</option>
+        <option value="mayorista">Pedido mayorista</option>
+        <option value="regular">Pedido regular</option>
+      </select>
+      <textarea placeholder="Detalle del pedido (productos, cantidades, fecha necesaria)" required></textarea>
+      <button class="btn" type="submit">📨 Enviar Consulta</button>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 Delicia Casera
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
